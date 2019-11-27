@@ -1,0 +1,18 @@
+Azure provides three kind of storages.
+ 1. Blob Storage
+ 2. Storage Gen Purpose V1(Container)
+ 3. Storage Gen Purpose V2(File System)
+ 
+ 1. Blob Storage REST API.
+ https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api
+ 
+ 
+ 2. Storage Gen Purpose V1(Container) REST API
+ https://docs.microsoft.com/en-us/rest/api/datalakestore/webhdfs-filesystem-apis
+ 
+ 
+ 3. Storage Gen Purpose V2(File System) REST API
+ https://docs.microsoft.com/en-us/rest/api/storageservices/data-lake-storage-gen2
+
+  
+ 
