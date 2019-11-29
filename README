@@ -1,7 +1,10 @@
 Azure provides three kind of storages.
  1. Blob Storage
  2. Storage Gen Purpose V1(Container)
- 3. Storage Gen Purpose V2(File System)
+ 3. Storage Gen Purpose V2(Container)
+ 4. Storage Gen Purpose V2(File System) with Data Lake Storage Gen2 Hierarchical namespace enabled.
+ 
+ Storage needs "Storage Blob Data Contributor" role to be granted to write the data
  
  1. Blob Storage REST API.
  https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api
@@ -29,6 +32,17 @@ client_secret:<client secret>
  
  3. Storage Gen Purpose V2(File System) REST API
  https://docs.microsoft.com/en-us/rest/api/storageservices/data-lake-storage-gen2
+ 
+ Use either version of OAuth version API token 
+ Create a file
+ PUT https://amittestgen2stg.dfs.core.windows.net/test/amit2.json?resource=file
+ Headers
+Authorization: Bearer <token>
+Content-Type:application/json
+x-ms-version:2018-11-09
+x-ms-date:2019-06-09
+If-None-Match:*
+ 
 
   
  
