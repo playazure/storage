@@ -6,6 +6,15 @@ Azure provides three kind of storages.
  1. Blob Storage REST API.
  https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api
  
+ OAuth2 Authorization Token
+ POST https://login.microsoftonline.com/<tenant Id>/oauth2/token
+ 
+ Form Data Fields
+grant_type:client_credentials
+resource:https://storage.azure.com/
+client_id: <client id>
+client_secret:<client secret>
+ 
  
  2. Storage Gen Purpose V1(Container) REST API
  https://docs.microsoft.com/en-us/rest/api/datalakestore/webhdfs-filesystem-apis
